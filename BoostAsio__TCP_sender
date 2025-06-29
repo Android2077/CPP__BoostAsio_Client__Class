@@ -13,8 +13,10 @@
 #include <mutex>              
 #include <condition_variable> 
 
-#include <boost\asio.hpp>      //[подключаем заголовнчый файл boost asio]
 
+#define BOOST_SYSTEM_USE_UTF8          //Нужен для того, чтобы Boost Asio возвращал текст ошибок в кодировке UTF-8.
+
+#include <boost\asio.hpp>      //[подключаем заголовнчый файл boost asio]
 
 
 
